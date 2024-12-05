@@ -1,7 +1,7 @@
 CXX = g++
 CFLAGS = -Wall -O2 -pipe -c
 PACKAGE = `pkg-config --cflags gtk+-2.0`
-LIBS = `pkg-config --libs gtk+-2.0` -lgmp -lmpfr -pthread
+LIBS = `pkg-config --libs gtk+-2.0` -lgmp -pthread
 EXE = mandelbrot
 
 SRCS = main.cpp mandelbrot.cpp color.cpp

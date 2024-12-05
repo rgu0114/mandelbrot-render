@@ -1,7 +1,7 @@
 #ifndef __COLOR_H
 #define __COLOR_H
 
-#include <mpfr.h>
+// #include <mpfr.h>
 #include <stdint.h>
 #include <functional>
 

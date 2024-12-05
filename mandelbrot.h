@@ -1,12 +1,9 @@
 #ifndef __MANDELBROT_H
 #define __MANDELBROT_H
 
-#include <mpfr.h>
-#include <stdint.h>
+#include <cstdint>
 #include <functional>
 #include "color.h"
-
-#define MPFR_NULL ((mpfr_ptr)0)
 
 namespace mandelbrot
 {
@@ -27,9 +24,9 @@ namespace mandelbrot
 		// precision of floating-point variables
 		double prec;
 		// coordinate of left-top point
-		mpfr_t x0, y0;
-		// distance between two adjacent point
-		mpfr_t step;
+		long double x0, y0;
+		// distance between two adjacent points
+		long double step;
 
 		void init();
 		void clear();
@@ -39,7 +36,6 @@ namespace mandelbrot
 		render_t render_info, 
 		render_callback_t = nullptr, 
 		render_control_t  = nullptr);
-
 }
 
 #endif // __MANDELBROT_H
